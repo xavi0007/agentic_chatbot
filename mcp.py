@@ -19,6 +19,11 @@ from dotenv import load_dotenv
 load_dotenv()  # load environment variables from .env
 
 
+# Why use MCP
+# Don't bloat the agent with tool-specific logic and intermediary steps- keep it focused on reasoning and decision-making
+# Decouple tool execution from agent reasoning - allows for more flexible and powerful tool interactions
+# Support more complex tool interactions, like multi-step calls, conditional logic based on tool results, and dynamic tool discovery
+
 class MCPClient:
     def __init__(self):
         # Initialize session and client objects
