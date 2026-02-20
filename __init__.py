@@ -1,12 +1,18 @@
 from .agent import AgenticChatbot
-from .factory import build_default_agent
+from .factory import ChatbotFactory, Provider, build_default_agent
+from .mcp import MCPConnectorRegistry, MCPPromptConnector, MCPToolConnector
 from .schemas import Action, AgentResponse, ChatMessage, Role
 
 __all__ = [
     "Action",
     "AgenticChatbot",
     "AgentResponse",
+    "ChatbotFactory",
     "ChatMessage",
+    "MCPConnectorRegistry",
+    "MCPPromptConnector",
+    "MCPToolConnector",
+    "Provider",
     "Role",
     "build_default_agent",
 ]
