@@ -48,7 +48,7 @@ class ChatbotFactory:
         provider = self.provider.strip().lower()
         if provider == "openai":
             return OpenAIChatClient(
-                model=self.model or "gpt-4o-mini",
+                model=self.model or "gpt-5-mini",
                 api_key=self.api_key,
                 sdk_client=self.sdk_client,
             )
@@ -60,7 +60,7 @@ class ChatbotFactory:
             )
         if provider == "google":
             return GoogleChatClient(
-                model=self.model or "gemini-1.5-flash",
+                model=self.model or "gemini-2.5-flash",
                 api_key=self.api_key,
                 sdk_client=self.sdk_client,
             )
